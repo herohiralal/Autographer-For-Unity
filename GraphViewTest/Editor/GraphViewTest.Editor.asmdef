@@ -1,0 +1,17 @@
+{
+    "name": "GraphViewTest.Editor",
+    "references": [
+        "GUID:eed8bc3f89fc0834c87dac513e613eec"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": true,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": false,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

@@ -1,0 +1,334 @@
+.node {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.node {
+    border-radius: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    border-left-width: 0;
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+}
+
+.node {
+    border-radius: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    border-left-width: 0;
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    align-items: stretch;
+}
+
+.unity-text-element {
+    font-size: 11px;
+}
+
+#divider {
+    background-color: rgb(35, 35, 35);
+    border-color: rgb(35, 35, 35);
+}
+
+#divider.horizontal {
+    height: 0.01px;
+    border-bottom-width: 1px;
+}
+
+#divider.horizontal.hidden {
+    width: 0;
+    border-bottom-width: 0;
+}
+
+#divider.vertical {
+    width: 0.01px;
+    border-right-width: 1px;
+}
+
+#divider.vertical.hidden {
+    width: 0;
+    border-right-width: 0;
+}
+
+#selection-border {
+    border-left-width: 0;
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-radius: 8px;
+    margin-bottom: 1px;
+    margin-left: 1px;
+    margin-right: 1px;
+    margin-top: 1px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+:hover > #selection-border {
+    border-color: rgb(65, 192, 255);
+    border-top-width: 1px;
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+}
+
+:selected > #selection-border {
+    border-color: rgb(68, 192, 255);
+    border-left-width: 1px;
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+}
+
+:selected:hover > #selection-border {
+    border-color: rgb(68, 192, 255);
+    border-top-width: 2px;
+    border-left-width: 2px;
+    border-right-width: 2px;
+    border-bottom-width: 2px;
+}
+
+.node:hover {
+    border-width: 0;
+}
+
+#node-border {
+    margin-top: 1px;
+    margin-bottom: 1px;
+    margin-left: 1px;
+    margin-right: 1px;
+    border-radius: 6px;
+    border-color: rgb(25, 25, 25);
+    border-left-width: 1px;
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    min-width: 200px;
+}
+
+#title {
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(63, 63, 63);
+    height: 36px;
+}
+
+#title-label {
+    color: rgb(193, 193, 193);
+    font-size: 12px;
+    -unity-text-align: middle-left;
+    margin-top: 6px;
+    margin-left: 6px;
+    margin-bottom: 6px;
+    margin-right: 0;
+    padding-left: 2px;
+}
+
+#contents {
+    flex: 1 0 auto;
+}
+
+#contents {
+    flex: 1 0 auto;
+}
+
+#title-button-container {
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#collapse-button {
+    width: 28px;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 4px;
+}
+
+#collapse-button > #icon {
+    -unity-background-scale-mode: scale-to-fit;
+    width: 12px;
+    height: 12px;
+    align-self: center;
+    opacity: 0.5;
+    visibility: hidden;
+}
+
+.node:hover #collapse-button > #icon {
+    visibility: visible;
+}
+
+.node.collapsed > #node-border > #title > #title-button-container > #collapse-button > #icon {
+    background-image: resource('graphview/nodes/nodechevronleft.png');
+}
+
+.node.expanded > #node-border > #title > #title-button-container > #collapse-button > #icon {
+    background-image: resource('graphview/nodes/nodechevrondown.png');
+}
+
+#collapse-button:disabled > #icon {
+    opacity: 0.15;
+}
+
+#collapse-button:hover:enabled > #icon {
+    background-color: rgb(43, 43, 43);
+    border-radius: 1px;
+    opacity: 1;
+}
+
+#contents > #top {
+    flex-direction: row;
+}
+
+#contents > #top > #input {
+    background-color: rgb(63, 63, 63);
+    padding-top: 4px;
+    padding-bottom: 4px;
+    flex: 1 0 auto;
+}
+
+#contents > #top > #output {
+    background-color: rgb(46, 46, 46);
+    padding-top: 4px;
+    padding-bottom: 4px;
+    flex: 1 0 auto;
+}
+
+#contents > #top {
+    flex-direction: row;
+}
+
+.verticalContainer {
+    background-color: rgb(46, 46, 46);
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    min-height: 40px;
+}
+
+#input-container > .port.input {
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    min-width: 24px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+#output-container > .port.output {
+    flex-direction: column-reverse;
+    width: auto;
+    height: auto;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    min-width: 24px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    background-color: rgb(46, 46, 46);
+}
+
+.verticalContainer > .port > #connector {
+    width: 50px;
+    height: 20px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.verticalContainer > .port > #connector > #cap {
+    width: 44px;
+    height: 14px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.typeSuperTester > #title {
+    -unity-font-style: bold;
+}
+
+#input-container > .port > #type {
+    margin-top: 5px;
+}
+
+#output-container > .port > #type {
+    margin-bottom: 5px;
+}
+
+.typeSuperTester > #node-border > #title {
+    background-color: rgb(171, 31, 31);
+}
+
+.typeNotTester > #node-border > #title {
+    background-color: rgb(147, 96, 0);
+}
+
+.typeNotNotTester > #node-border > #title {
+    background-color: rgb(63, 103, 6);
+}
+
+.typeNode > #node-border > #title {
+    background-color: rgb(147, 96, 0);
+}
+
+.typeDecorator > #node-border > #title {
+    background-color: rgb(63, 103, 6);
+}
+
+.typeTask > #node-border > #title {
+    background-color: rgb(171, 31, 31);
+}
+
+#inline-fields-container {
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    background-color: rgba(63, 63, 63, 0.85);
+    min-width: 200px;
+}
+
+.hidden {
+    background-color: rgb(255, 0, 0);
+    width: 0;
+    height: 0;
+    min-height: 0;
+    max-height: 0;
+    border-left-width: 0;
+    border-right-width: 0;
+    border-top-width: 0;
+    border-bottom-width: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}

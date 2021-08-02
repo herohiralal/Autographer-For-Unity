@@ -1,0 +1,9 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements">
+    <uie:Toolbar style="flex-direction: row;">
+        <Style src="GraphEditor.uss" />
+        <uie:ToolbarMenu text="Asset" />
+    </uie:Toolbar>
+    <GraphEditorView focusable="true" style="flex-grow: 1;">
+        <Style src="GraphEditor.uss" />
+    </GraphEditorView>
+</ui:UXML>
